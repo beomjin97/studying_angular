@@ -1,0 +1,20 @@
+<div *ngIf="isRendered">123</div>
+
+<ng-template [ngif]="isRendered">
+  <div>123</div>
+</ng-template>
+
+<div *appUnless="!isRendered">456</div>
+
+<p appBasicHighlight>show me the directive</p>
+<p [appBetterHighlight]="'red'" [defaultColor]="'yellow'">
+  show me the directive
+</p>
+<p [appBetterHighlight]="'red'" defaultColor="yellow">show me the directive</p>
+
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="5">value is 5</p>
+  <p *ngSwitchCase="10">value is 10</p>
+  <p *ngSwitchCase="15">value is 15</p>
+  <p *ngSwitchDefault="">value is another</p>
+</div>
