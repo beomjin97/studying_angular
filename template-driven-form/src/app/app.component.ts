@@ -7,8 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  //@ts-ignore
-  @ViewChild('f') signupForm: NgForm;
+  @ViewChild('f') signupForm!: NgForm;
 
   defaultQuestion = 'pet';
   answer = '';

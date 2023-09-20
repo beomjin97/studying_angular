@@ -16,8 +16,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   genders = ['male', 'female'];
-  //@ts-ignore
-  signupForm: FormGroup;
+  signupForm!: FormGroup;
   forbiddenUsername = ['Chirs', 'Anna'];
 
   ngOnInit(): void {
